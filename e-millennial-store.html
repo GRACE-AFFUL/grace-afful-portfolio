@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="E-Millennial Store, a responsive gadget storefront developed by Grace Afful using HTML, CSS and JavaScript." name="description"/>
+<title>E-Millennial Store | Grace Afful</title>
+<script>
+    (function () {
+      const saved = localStorage.getItem("portfolio-theme") || "system";
+      const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme =
+        saved === "light" || saved === "dark"
+          ? saved
+          : dark ? "dark" : "light";
+    })();
+  </script>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-content">
+<a class="logo" href="index.html">Grace<span>.</span></a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle" type="button">
+        ☰
+      </button>
+<nav aria-label="Main navigation" class="navigation" id="main-navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a aria-current="page" href="projects.html">Projects</a>
+<a href="educational-media.html">Educational Media</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="theme-control">
+<label for="theme-select">Theme</label>
+<select aria-label="Choose website theme" id="theme-select">
+<option value="system">System</option>
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- Project introduction -->
+<section class="section research-hero">
+<div class="container">
+<a class="back-link" href="projects.html">
+          ← Back to All Projects
+        </a>
+<p class="eyebrow">WEB DEVELOPMENT · E-COMMERCE</p>
+<h1 class="research-title">E-Millennial Store</h1>
+<p class="section-intro">
+          A responsive gadget storefront demonstration
+          built with HTML, CSS and vanilla JavaScript,
+          featuring product browsing, cart management,
+          checkout validation and an optional Paystack
+          test-mode payment flow.
+        </p>
+<div class="research-tags">
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>Responsive Design</span>
+<span>Paystack Test Mode</span>
+</div>
+<a class="button primary" href="https://github.com/GRACE-AFFUL/E-Millennial-Store" rel="noopener noreferrer" target="_blank">
+          Explore the Source Code on GitHub
+        </a>
+</div>
+</section>
+<!-- Overview -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT OVERVIEW</p>
+<h2>Building an Interactive Online Storefront</h2>
+<p>
+          E-Millennial Store is a frontend e-commerce
+          demonstration designed to provide an interactive
+          gadget-shopping experience.
+        </p>
+<p>
+          Visitors can browse products, add items to
+          a shopping cart, change quantities, review
+          their order and complete a checkout form.
+          The project also includes an optional
+          Paystack test-mode integration.
+        </p>
+<div class="research-highlight">
+<h3>Project Scope</h3>
+<p>
+            This is a frontend demonstration rather than
+            a production e-commerce platform. It does
+            not provide secure server-side order
+            processing or payment verification.
+          </p>
+</div>
+</div>
+</section>
+<!-- Problem -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">PROBLEM AND OBJECTIVE</p>
+<h2>Designing a Functional Shopping Experience</h2>
+<p>
+          A storefront must present products clearly
+          while making it easy for customers to
+          select items, update quantities and
+          understand their total order.
+        </p>
+<p>
+          The objective was to build a responsive
+          shopping interface and implement essential
+          client-side interactions without relying
+          on a large frontend framework.
+        </p>
+</div>
+</section>
+<!-- My role -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">MY CONTRIBUTION</p>
+<h2>My Role</h2>
+<p>
+          I developed the frontend storefront using
+          HTML, CSS and JavaScript. The work included
+          page layout, product presentation, shopping-cart
+          interactions, quantity controls, checkout form
+          validation and the test-payment interface.
+        </p>
+</div>
+</section>
+<!-- Features -->
+<section class="section">
+<div class="container">
+<p class="eyebrow">CORE FEATURES</p>
+<h2>What the Storefront Can Do</h2>
+<div class="research-method-grid">
+<article class="research-method-card">
+<h3>Product Catalogue</h3>
+<p>
+              Displays gadgets in a browsable
+              storefront interface.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>Shopping Cart</h3>
+<p>
+              Allows users to add products
+              and adjust item quantities.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>Checkout Form</h3>
+<p>
+              Collects customer details and
+              applies client-side validation.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>Payment Demonstration</h3>
+<p>
+              Includes an optional Paystack
+              test-mode checkout flow.
+            </p>
+</article>
+</div>
+</div>
+</section>
+<!-- Technologies -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">TOOLS AND TECHNOLOGIES</p>
+<h2>Technology Stack</h2>
+<div class="research-method-grid">
+<article class="research-method-card">
+<h3>HTML5</h3>
+<p>
+              Structures the storefront,
+              product information and forms.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>CSS3</h3>
+<p>
+              Controls layout, typography,
+              responsiveness and visual styling.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>JavaScript</h3>
+<p>
+              Handles cart interactions,
+              quantity changes and form validation.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>Paystack Inline JS</h3>
+<p>
+              Supports an optional test-payment
+              popup using a test public key.
+            </p>
+</article>
+</div>
+</div>
+</section>
+<!-- Development process -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">DEVELOPMENT PROCESS</p>
+<h2>How the Storefront Works</h2>
+<ol class="research-process">
+<li>
+<strong>Interface design:</strong>
+            Create a responsive landing page
+            and product catalogue.
+          </li>
+<li>
+<strong>Cart interactions:</strong>
+            Implement product selection and
+            quantity adjustments.
+          </li>
+<li>
+<strong>Order summary:</strong>
+            Display the selected items
+            and calculated totals.
+          </li>
+<li>
+<strong>Form validation:</strong>
+            Check customer information
+            before proceeding.
+          </li>
+<li>
+<strong>Test checkout:</strong>
+            Provide an optional payment
+            demonstration using Paystack test mode.
+          </li>
+</ol>
+</div>
+</section>
+<!-- Results -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT OUTCOME</p>
+<h2>What I Built</h2>
+<p>
+          The project brings together product
+          presentation, shopping-cart controls,
+          order summaries and checkout validation
+          in a single frontend application.
+        </p>
+<p>
+          It demonstrates how JavaScript can
+          support interactive shopping experiences
+          while HTML and CSS provide the
+          underlying structure and presentation.
+        </p>
+</div>
+</section>
+<!-- Screenshots -->
+<section class="section">
+<div class="container">
+<p class="eyebrow">PROJECT SCREENSHOTS</p>
+<h2>Storefront Preview</h2>
+<p class="section-intro">
+          Screenshots from the storefront demonstrate the landing page, introduction, product catalogue and empty-cart checkout form. The images document the interface, not successful payment processing.
+        </p>
+<div class="research-figure-grid">
+<figure class="research-evidence-figure"><img alt="Storefront landing page with E-Millennial Store branding" loading="lazy" src="assets/images/store_landing.png"/><figcaption>Storefront landing page with E-Millennial Store branding.</figcaption></figure>
+<figure class="research-evidence-figure"><img alt="Storefront introduction and about section" loading="lazy" src="assets/images/store_about.png"/><figcaption>Storefront introduction and about section.</figcaption></figure>
+<figure class="research-evidence-figure"><img alt="Gadget catalogue showing products and add-to-cart buttons" loading="lazy" src="assets/images/store_catalog.png"/><figcaption>Gadget catalogue showing products and add-to-cart buttons.</figcaption></figure>
+<figure class="research-evidence-figure"><img alt="Cart and checkout form shown with an empty cart" loading="lazy" src="assets/images/store_checkout.png"/><figcaption>Cart and checkout form shown with an empty cart.</figcaption></figure>
+</div>
+</div>
+</section>
+<!-- Limitations -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">LIMITATIONS AND LESSONS</p>
+<h2>What I Learned</h2>
+<p>
+          The project provided practical experience
+          in responsive design, DOM manipulation,
+          frontend state management and form validation.
+        </p>
+<p>
+          A key limitation is that order totals
+          are calculated in the browser. These
+          values cannot be trusted for real
+          payment processing.
+        </p>
+<p>
+          A production system would require a
+          secure backend to calculate prices,
+          verify transactions and manage orders.
+        </p>
+<div class="research-highlight">
+<h3>Payment Safety</h3>
+<p>
+            The Paystack integration runs in test mode only; no live payment keys are used.
+          </p>
+</div>
+</div>
+</section>
+<!-- Evidence -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">PROJECT EVIDENCE</p>
+<h2>Explore the Project</h2>
+<p>
+          The source code and README are available
+          on GitHub. A live demonstration will
+          be linked after deployment and testing.
+        </p>
+<div class="button-group">
+<a class="button primary" href="https://github.com/GRACE-AFFUL/E-Millennial-Store" rel="noopener noreferrer" target="_blank">
+            Explore the Source Code on GitHub
+          </a>
+<a class="button secondary" href="projects.html">
+            Return to All Projects
+          </a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-content">
+<p>© <span id="year"></span> Grace Afful. All rights reserved.</p>
+<p>Research · Data · Technology</p>
+</div>
+</footer>
+</body>
+</html>

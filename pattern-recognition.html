@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Grace Afful's comparison of K-means, hierarchical clustering and Gaussian mixture models using the UCI Wine dataset." name="description"/>
+<title>Unsupervised Pattern Recognition | Grace Afful</title>
+<script>
+    (function () {
+      const saved = localStorage.getItem("portfolio-theme") || "system";
+      const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme =
+        saved === "light" || saved === "dark"
+          ? saved
+          : dark ? "dark" : "light";
+    })();
+  </script>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-content">
+<a class="logo" href="index.html">Grace<span>.</span></a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle" type="button">
+        ☰
+      </button>
+<nav aria-label="Main navigation" class="navigation" id="main-navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a aria-current="page" href="projects.html">Projects</a>
+<a href="educational-media.html">Educational Media</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="theme-control">
+<label for="theme-select">Theme</label>
+<select aria-label="Choose website theme" id="theme-select">
+<option value="system">System</option>
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- Project introduction -->
+<section class="section research-hero">
+<div class="container">
+<a class="back-link" href="projects.html">
+          ← Back to All Projects
+        </a>
+<p class="eyebrow">MACHINE LEARNING · DATA SCIENCE</p>
+<h1 class="research-title">
+          Unsupervised Pattern Recognition
+        </h1>
+<p class="section-intro">
+          Comparing K-means, hierarchical clustering
+          and Gaussian mixture models to discover
+          patterns in the UCI Wine Recognition dataset.
+        </p>
+<div class="research-tags">
+<span>Python</span>
+<span>Scikit-learn</span>
+<span>PCA</span>
+<span>Clustering</span>
+<span>Model Evaluation</span>
+</div>
+<a class="button primary" href="https://github.com/GRACE-AFFUL/Unsupervised-Wine-Clustering" rel="noopener noreferrer" target="_blank">
+          View the Notebook on GitHub
+        </a>
+</div>
+</section>
+<!-- Overview -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT OVERVIEW</p>
+<h2>Discovering Patterns Without Class Labels</h2>
+<p>
+          This project compares three unsupervised machine
+          learning approaches: K-means clustering,
+          hierarchical clustering using Ward linkage,
+          and Gaussian mixture models (GMM).
+        </p>
+<p>
+          The analysis uses the UCI Wine Recognition dataset,
+          containing 178 observations and 13 chemical features.
+          The objective is to identify patterns and group
+          similar observations without using known class
+          labels during clustering.
+        </p>
+<div class="research-stats">
+<div class="research-stat">
+<strong>178</strong>
+<span>Wine observations</span>
+</div>
+<div class="research-stat">
+<strong>13</strong>
+<span>Chemical features</span>
+</div>
+<div class="research-stat">
+<strong>3</strong>
+<span>Clustering algorithms compared</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Research problem -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">PROBLEM AND OBJECTIVE</p>
+<h2>What Was the Project Trying to Solve?</h2>
+<p>
+          Unsupervised learning identifies structure in
+          data when category labels are unavailable or
+          intentionally excluded from model development.
+        </p>
+<p>
+          Different clustering methods make different
+          assumptions about how observations should
+          be grouped. This project investigates how
+          their results compare on the same dataset.
+        </p>
+<div class="research-highlight">
+<h3>Central Question</h3>
+<p>
+            How do K-means, Ward hierarchical clustering
+            and Gaussian mixture models compare in their
+            ability to identify meaningful groups within
+            the Wine Recognition dataset?
+          </p>
+</div>
+</div>
+</section>
+<!-- My role -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">MY CONTRIBUTION</p>
+<h2>My Role</h2>
+<p>
+          I prepared the dataset, explored its features,
+          standardized the variables, applied principal
+          component analysis, implemented the three
+          clustering approaches and compared their
+          evaluation metrics.
+        </p>
+<p>
+          I also documented the analytical workflow
+          and interpreted the differences between
+          the clustering results.
+        </p>
+</div>
+</section>
+<!-- Data and tools -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">DATA AND METHODS</p>
+<h2>Tools and Analytical Techniques</h2>
+<div class="research-method-grid">
+<article class="research-method-card">
+<h3>Dataset</h3>
+<ul>
+<li>UCI Wine Recognition dataset</li>
+<li>178 observations</li>
+<li>13 chemical features</li>
+<li>Loaded through scikit-learn</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Clustering Methods</h3>
+<ul>
+<li>K-means clustering</li>
+<li>Ward hierarchical clustering</li>
+<li>Gaussian mixture models</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Evaluation</h3>
+<ul>
+<li>Elbow method</li>
+<li>Silhouette analysis</li>
+<li>Adjusted Rand Index</li>
+<li>PCA visualization</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Technologies</h3>
+<ul>
+<li>Python and Jupyter Notebook</li>
+<li>NumPy and pandas</li>
+<li>Scikit-learn and SciPy</li>
+<li>Matplotlib and Seaborn</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<!-- Process -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">ANALYTICAL PROCESS</p>
+<h2>How I Conducted the Analysis</h2>
+<ol class="research-process">
+<li>
+<strong>Data exploration:</strong>
+            Examined the chemical features and
+            characteristics of the dataset.
+          </li>
+<li>
+<strong>Preprocessing:</strong>
+            Standardized features to make their
+            scales comparable.
+          </li>
+<li>
+<strong>Dimensionality reduction:</strong>
+            Used principal component analysis
+            to examine patterns visually.
+          </li>
+<li>
+<strong>Clustering:</strong>
+            Applied K-means, Ward hierarchical
+            clustering and Gaussian mixture models.
+          </li>
+<li>
+<strong>Evaluation:</strong>
+            Compared silhouette scores and adjusted
+            Rand indices to assess the resulting groups.
+          </li>
+<li>
+<strong>Interpretation:</strong>
+            Identified differences in model performance
+            and considered methodological limitations.
+          </li>
+</ol>
+</div>
+</section>
+<!-- Results -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">PROJECT RESULTS</p>
+<h2>Clustering Performance Comparison</h2>
+<p>
+          The three clustering approaches were evaluated
+          using silhouette scores and adjusted Rand indices.
+        </p>
+<div class="results-table-wrapper">
+<table class="results-table">
+<caption>
+              Clustering evaluation results
+            </caption>
+<thead>
+<tr>
+<th scope="col">Algorithm</th>
+<th scope="col">Silhouette Score</th>
+<th scope="col">Adjusted Rand Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K-means</td>
+<td>0.285</td>
+<td><strong>0.897</strong></td>
+</tr>
+<tr>
+<td>Hierarchical (Ward)</td>
+<td>0.277</td>
+<td>0.790</td>
+</tr>
+<tr>
+<td>Gaussian Mixture Model</td>
+<td>0.284</td>
+<td>0.880</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="research-highlight">
+<h3>Key Finding</h3>
+<p>
+            K-means achieved the highest adjusted Rand
+            index of 0.897, indicating the strongest
+            agreement with the known wine cultivar
+            categories in this experiment.
+          </p>
+</div>
+<p>
+          The three methods produced relatively similar
+          silhouette scores, ranging from 0.277 to 0.285.
+          This suggests that their internal cluster
+          separation was broadly comparable.
+        </p>
+<p class="research-small-note">
+          Known class labels were used for external
+          evaluation, not to train the clustering models.
+        </p>
+</div>
+</section>
+<!-- Figures -->
+<section class="section section-muted">
+<div class="container">
+<p class="eyebrow">DATA VISUALIZATION</p>
+<h2>Visualizing the Clustering Results</h2>
+<p class="section-intro">
+          The figures below are taken from the project Jupyter Notebook and illustrate the original clustering analysis.
+        </p>
+<div class="research-figure-grid">
+<figure class="research-evidence-figure"><img alt="Principal component analysis of the wine feature space" loading="lazy" src="assets/images/wine_pca.png"/><figcaption>Principal component analysis of the wine feature space. Source: project notebook output.</figcaption></figure>
+<figure class="research-evidence-figure"><img alt="K-means clustering projected onto the first two principal components" loading="lazy" src="assets/images/wine_kmeans.png"/><figcaption>K-means clustering projected onto the first two principal components. Source: project notebook output.</figcaption></figure>
+<figure class="research-evidence-figure"><img alt="Ward hierarchical clustering projected onto the first two principal components" loading="lazy" src="assets/images/wine_ward.png"/><figcaption>Ward hierarchical clustering projected onto the first two principal components. Source: project notebook output.</figcaption></figure>
+<figure class="research-evidence-figure"><img alt="Gaussian mixture model clustering projected onto the first two principal components" loading="lazy" src="assets/images/wine_gmm.png"/><figcaption>Gaussian mixture model clustering projected onto the first two principal components. Source: project notebook output.</figcaption></figure>
+</div>
+</div>
+</section>
+<!-- Limitations -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">LIMITATIONS AND LESSONS</p>
+<h2>What the Results Tell Us</h2>
+<p>
+          The dataset is relatively small, so results
+          from this experiment should not be assumed
+          to generalize to larger or more complex datasets.
+        </p>
+<p>
+          Clustering results can depend on preprocessing,
+          algorithm settings and assumptions about
+          cluster structure.
+        </p>
+<p>
+          This project strengthened my understanding
+          of unsupervised learning, dimensionality
+          reduction, internal and external validation,
+          and comparative model evaluation.
+        </p>
+</div>
+</section>
+<!-- Evidence -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT EVIDENCE</p>
+<h2>Explore the Analysis</h2>
+<p>
+          The public GitHub repository contains the
+          Jupyter Notebook and project documentation.
+        </p>
+<div class="button-group">
+<a class="button primary" href="https://github.com/GRACE-AFFUL/Unsupervised-Wine-Clustering" rel="noopener noreferrer" target="_blank">
+            View the Notebook on GitHub
+          </a>
+<a class="button secondary" href="projects.html">
+            Return to All Projects
+          </a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-content">
+<p>© <span id="year"></span> Grace Afful. All rights reserved.</p>
+<p>Research · Data · Technology</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Computer vision projects by Grace Afful, covering image classification and image captioning with deep learning." name="description"/>
+<title>Computer Vision | Grace Afful</title>
+<script>
+    (function () {
+      const saved = localStorage.getItem("portfolio-theme") || "system";
+      const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme =
+        saved === "light" || saved === "dark"
+          ? saved
+          : dark ? "dark" : "light";
+    })();
+  </script>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-content">
+<a class="logo" href="index.html">Grace<span>.</span></a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle" type="button">
+        ☰
+      </button>
+<nav aria-label="Main navigation" class="navigation" id="main-navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a aria-current="page" href="projects.html">Projects</a>
+<a href="educational-media.html">Educational Media</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="theme-control">
+<label for="theme-select">Theme</label>
+<select aria-label="Choose website theme" id="theme-select">
+<option value="system">System</option>
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- Introduction -->
+<section class="section research-hero">
+<div class="container">
+<a class="back-link" href="projects.html">
+          ← Back to All Projects
+        </a>
+<p class="eyebrow">DEEP LEARNING · COMPUTER VISION</p>
+<h1 class="research-title">Computer Vision</h1>
+<p class="section-intro">
+          Exploring how deep learning models interpret
+          visual information through image classification
+          and automated image captioning.
+        </p>
+<div class="research-tags">
+<span>Python</span>
+<span>Deep Learning</span>
+<span>Image Classification</span>
+<span>Transformers</span>
+<span>Model Evaluation</span>
+</div>
+
+</div>
+</section>
+<!-- Overview -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT OVERVIEW</p>
+<h2>Two Approaches to Visual Understanding</h2>
+<p>
+          These projects investigate two computer vision tasks.
+          Image classification predicts a category for an image,
+          while image captioning generates a natural-language
+          description of visual content.
+        </p>
+<p>
+          Together, they demonstrate the application of
+          deep learning, model evaluation and critical
+          interpretation of prediction errors.
+        </p>
+<div class="research-method-grid">
+<article class="research-method-card">
+<h3>Image Classification</h3>
+<p>
+              Learning visual patterns to distinguish
+              between 16 image categories.
+            </p>
+<a class="project-link" href="#classification">
+              Explore Image Classification →
+            </a>
+</article>
+<article class="research-method-card">
+<h3>Image Captioning</h3>
+<p>
+              Combining visual features and language
+              generation to describe images.
+            </p>
+<a class="project-link" href="#captioning">
+              Explore Image Captioning →
+            </a>
+</article>
+</div>
+</div>
+</section>
+<!-- Classification -->
+<section class="section" id="classification">
+<div class="container research-container">
+<p class="eyebrow">PROJECT 1 · IMAGE CLASSIFICATION</p>
+<h2>Multi-Class Image Classification</h2>
+<h3>Problem and Objective</h3>
+<p>
+          The objective was to develop and evaluate
+          a deep learning model capable of assigning
+          images to one of 16 categories.
+        </p>
+<h3>My Role</h3>
+<p>
+          The project involved model development,
+          training, validation, performance analysis
+          and interpretation of classification errors.
+        </p>
+<div class="research-stats">
+<div class="research-stat">
+<strong>16</strong>
+<span>Image categories</span>
+</div>
+<div class="research-stat">
+<strong>79.37%</strong>
+<span>Validation accuracy</span>
+</div>
+<div class="research-stat">
+<strong>0.72</strong>
+<span>Kaggle public score</span>
+</div>
+</div>
+<h3>Methods and Evaluation</h3>
+<p>
+          The image classification model contained
+          approximately 3.19 million parameters.
+          Model performance was examined using
+          validation accuracy, training curves
+          and a confusion matrix.
+        </p>
+<h3>Results</h3>
+<p>
+          The reported validation accuracy was
+          79.37%, with a Kaggle public score of
+          0.72. These are different evaluation
+          measures and should not be treated
+          as directly interchangeable.
+        </p>
+<div class="research-highlight">
+<h3>Interpretation</h3>
+<p>
+            The results demonstrate the model's
+            ability to distinguish multiple visual
+            categories, while also highlighting
+            the need to examine category-specific
+            errors rather than relying on overall
+            accuracy alone.
+          </p>
+</div>
+<h3>Limitations and Lessons</h3>
+<p>
+          Overall accuracy may conceal differences
+          in performance between image categories.
+          The confusion matrix helps identify weaker categories
+          and examine misclassification patterns.
+        </p>
+</div>
+</section>
+<!-- Classification figures -->
+<section class="section section-muted">
+<div class="container">
+<p class="eyebrow">CLASSIFICATION VISUALIZATIONS</p>
+<h2>Training and Evaluation Figures</h2>
+<div class="research-figure-grid evidence-figure-grid">
+<figure class="research-evidence-figure">
+<img alt="Training and validation accuracy and loss curves across epochs for the 16-class classifier" loading="lazy" src="assets/images/classification_training_curves.png"/>
+<figcaption>Training and validation learning curves from the original classification notebook.</figcaption>
+</figure>
+<figure class="research-evidence-figure">
+<img alt="Confusion matrix displaying correct predictions and misclassifications across 16 image categories" loading="lazy" src="assets/images/classification_confusion_matrix.png"/>
+<figcaption>Confusion matrix showing variation in model performance across image categories.</figcaption>
+</figure>
+<figure class="research-evidence-figure">
+<img alt="Original notebook figure illustrating several image augmentation transformations" loading="lazy" src="assets/images/classification_augmentation.png"/>
+<figcaption>Examples of image augmentation used during model development.</figcaption>
+</figure>
+<figure class="research-evidence-figure">
+<img alt="Grid of sample image predictions and model labels from the classification notebook" loading="lazy" src="assets/images/classification_sample_predictions.png"/>
+<figcaption>Illustrative predictions recorded in the classification notebook; examples are not a substitute for held-out performance metrics.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<!-- Captioning -->
+<section class="section" id="captioning">
+<div class="container research-container">
+<p class="eyebrow">PROJECT 2 · IMAGE CAPTIONING</p>
+<h2>Automated Image Caption Generation</h2>
+<h3>Problem and Objective</h3>
+<p>
+          Image captioning combines computer vision
+          and natural-language generation. The goal
+          was to generate descriptions of images
+          using visual representations and a
+          language-generation model.
+        </p>
+<h3>Model Architecture</h3>
+<p>
+          The approach used MobileNetV2 to extract
+          visual features and a Transformer decoder
+          to generate captions.
+        </p>
+<div class="research-stats">
+<div class="research-stat">
+<strong>6,091</strong>
+<span>Training images</span>
+</div>
+<div class="research-stat">
+<strong>30,455</strong>
+<span>Training captions</span>
+</div>
+<div class="research-stat">
+<strong>0.1655</strong>
+<span>Approximate BLEU-4 score</span>
+</div>
+</div>
+<h3>Process</h3>
+<ol class="research-process">
+<li>
+<strong>Data preparation:</strong>
+            Prepare images and their associated
+            caption text.
+          </li>
+<li>
+<strong>Feature extraction:</strong>
+            Use MobileNetV2 to represent image content.
+          </li>
+<li>
+<strong>Caption generation:</strong>
+            Use a Transformer decoder to predict
+            caption sequences.
+          </li>
+<li>
+<strong>Evaluation:</strong>
+            Assess generated captions using
+            BLEU-4 and qualitative examples.
+          </li>
+</ol>
+<h3>Results</h3>
+<p>
+          The reported BLEU-4 score was approximately
+          0.1655. This provides a quantitative measure
+          of overlap between generated captions and
+          reference descriptions.
+        </p>
+<h3>Limitations and Lessons</h3>
+<p>
+          Caption quality can be affected by
+          overfitting and imperfect grounding
+          of generated words in the actual image.
+          BLEU-4 alone does not establish whether
+          a caption is accurate or meaningful.
+        </p>
+<p>
+          Reviewing both successful and unsuccessful
+          examples is therefore an important part
+          of evaluating this project.
+        </p>
+</div>
+</section>
+<!-- Captioning examples -->
+<section class="section section-muted">
+<div class="container">
+<p class="eyebrow">CAPTIONING EXAMPLES</p>
+<h2>Generated Caption Examples</h2>
+<p class="section-intro">
+          The following prediction/reference pairs are transcribed from the original
+          validation notebook. They are text-only examples: the underlying images
+          are not included here, so the reference captions are a comparison point,
+          not independent verification of visual accuracy.
+        </p>
+<div class="research-method-grid caption-example-grid">
+<article class="research-method-card">
+<h3>Example 1 · Partial match</h3>
+<p><strong>Generated:</strong> “a skateboarder does a trick on a ramp”</p>
+<p><strong>Reference:</strong> “a man on rollerblades is doing a trick”</p>
+<p>Captures a trick but confuses the activity.</p>
+</article>
+<article class="research-method-card">
+<h3>Example 2 · Partial match</h3>
+<p><strong>Generated:</strong> “a man in a white shirt is playing baseball”</p>
+<p><strong>Reference:</strong> “a baseball player attempts to catch a ball while another runs towards the base”</p>
+<p>Identifies baseball but omits the action and other player.</p>
+</article>
+<article class="research-method-card">
+<h3>Example 3 · Activity error</h3>
+<p><strong>Generated:</strong> “a man in a blue shirt is doing a trick on a bicycle”</p>
+<p><strong>Reference:</strong> “a group of boys play basketball together”</p>
+<p>Incorrectly identifies the central activity.</p>
+</article>
+<article class="research-method-card">
+<h3>Example 4 · Subject error</h3>
+<p><strong>Generated:</strong> “a dog running on a road”</p>
+<p><strong>Reference:</strong> “a boy is doing a trick on his skateboard in a park”</p>
+<p>Incorrectly identifies the subject and setting.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Evidence and publication -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">PROJECT MATERIALS</p>
+<h2>Code and Supporting Evidence</h2>
+<p>The figures and model outputs above illustrate the experiments and their evaluation. Full notebooks and model checkpoints are not hosted on this website.</p>
+
+<a class="button secondary" href="projects.html">
+          Return to All Projects
+        </a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-content">
+<p>© <span id="year"></span> Grace Afful. All rights reserved.</p>
+<p>Research · Data · Technology</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Ghana Student Portal, a Flask and SQLite student registration and management web application developed by Grace Afful." name="description"/>
+<title>Ghana Student Portal | Grace Afful</title>
+<script>
+    (function () {
+      const saved = localStorage.getItem("portfolio-theme") || "system";
+      const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme =
+        saved === "light" || saved === "dark"
+          ? saved
+          : dark ? "dark" : "light";
+    })();
+  </script>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-content">
+<a class="logo" href="index.html">Grace<span>.</span></a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle" type="button">
+        ☰
+      </button>
+<nav aria-label="Main navigation" class="navigation" id="main-navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a aria-current="page" href="projects.html">Projects</a>
+<a href="educational-media.html">Educational Media</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="theme-control">
+<label for="theme-select">Theme</label>
+<select aria-label="Choose website theme" id="theme-select">
+<option value="system">System</option>
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- Project introduction -->
+<section class="section research-hero">
+<div class="container">
+<a class="back-link" href="projects.html">
+          ← Back to All Projects
+        </a>
+<p class="eyebrow">SOFTWARE DEVELOPMENT</p>
+<h1 class="research-title">Ghana Student Portal</h1>
+<p class="section-intro">
+          A web-based student information system developed
+          with Python, Flask, SQLite, HTML, CSS and JavaScript.
+        </p>
+<div class="research-tags">
+<span>Python</span>
+<span>Flask</span>
+<span>SQLite</span>
+<span>JavaScript</span>
+<span>Web Development</span>
+</div>
+<a class="button primary" href="https://github.com/GRACE-AFFUL/Ghana-Student-Portal" rel="noopener noreferrer" target="_blank">
+          Explore the Source Code on GitHub
+        </a>
+</div>
+</section>
+<!-- Overview -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT OVERVIEW</p>
+<h2>What Is the Ghana Student Portal?</h2>
+<p>
+          I developed a Flask and SQLite student information
+          portal adapted to Ghana's 16 regions and 261 districts.
+          The system supports student registration, dependent
+          region and district selections, file validation,
+          searchable records, detailed student views and
+          asynchronous admission-status updates.
+        </p>
+<p>
+          The project demonstrates the integration of
+          frontend interfaces, backend application logic,
+          database storage and interactive functionality.
+        </p>
+</div>
+</section>
+<!-- Problem -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">PROJECT PROBLEM</p>
+<h2>The Problem I Wanted to Address</h2>
+<p>
+          Managing student registration information requires
+          a clear and organized way to capture records,
+          retrieve information and update application statuses.
+        </p>
+<p>
+          This project explores how a web-based system can
+          simplify these tasks while incorporating
+          Ghana-specific geographic information.
+        </p>
+<div class="research-highlight">
+<h3>Project Objective</h3>
+<p>
+            To develop an interactive student registration
+            and management application that supports
+            structured data entry, record searching
+            and admission-status updates.
+          </p>
+</div>
+</div>
+</section>
+<!-- My role -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">MY CONTRIBUTION</p>
+<h2>My Role</h2>
+<p>
+          I developed the application structure, implemented
+          the student registration workflow, connected the
+          interface to a SQLite database and added
+          interactive functionality using JavaScript.
+        </p>
+<p>
+          I also implemented the region and district
+          selection workflow, student record views
+          and admission-status management features.
+        </p>
+</div>
+</section>
+<!-- Features -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">APPLICATION FEATURES</p>
+<h2>What the System Can Do</h2>
+<div class="research-method-grid">
+<article class="research-method-card">
+<h3>Student Registration</h3>
+<p>
+              Collects student information through
+              a structured web form.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>Region and District Selection</h3>
+<p>
+              Provides dependent dropdown selections
+              using Ghana-specific geographic data.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>Student Records</h3>
+<p>
+              Displays registered students and
+              supports searching and detailed views.
+            </p>
+</article>
+<article class="research-method-card">
+<h3>Admission Status</h3>
+<p>
+              Supports interactive updates
+              to students' admission statuses.
+            </p>
+</article>
+</div>
+</div>
+</section>
+<!-- Tools -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">TECHNOLOGIES</p>
+<h2>Tools and Technologies</h2>
+<div class="research-method-grid">
+<article class="research-method-card">
+<h3>Backend</h3>
+<ul>
+<li>Python</li>
+<li>Flask</li>
+<li>SQLite</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Frontend</h3>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Data Handling</h3>
+<ul>
+<li>JSON geographic data</li>
+<li>Form validation</li>
+<li>Database records</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Development</h3>
+<ul>
+<li>Visual Studio Code</li>
+<li>Git and GitHub</li>
+<li>Local browser testing</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<!-- Process -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">DEVELOPMENT PROCESS</p>
+<h2>How I Built the Application</h2>
+<ol class="research-process">
+<li>
+<strong>Application design:</strong>
+            Organized the registration workflow,
+            student views and application routes.
+          </li>
+<li>
+<strong>Database integration:</strong>
+            Used SQLite to store and retrieve
+            student registration records.
+          </li>
+<li>
+<strong>Frontend development:</strong>
+            Created interfaces using HTML,
+            CSS and JavaScript.
+          </li>
+<li>
+<strong>Interactive features:</strong>
+            Added dependent dropdowns, searching
+            and admission-status updates.
+          </li>
+<li>
+<strong>Testing:</strong>
+            Tested registration, record retrieval
+            and status updates locally using
+            fictional student information.
+          </li>
+</ol>
+</div>
+</section>
+<!-- Results -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT OUTCOME</p>
+<h2>Results and Demonstration</h2>
+<p>
+          The application provides a working local
+          demonstration of student registration,
+          searchable records and admission-status
+          management.
+        </p>
+<p>
+          Testing with fictional student records
+          demonstrated the registration workflow,
+          geographic selections and record updates.
+        </p>
+<div class="research-highlight">
+<h3>Demonstration Data</h3>
+<p>
+            The public demonstration uses fictional
+            records. No real student information
+            or uploaded identity documents are included.
+          </p>
+</div>
+</div>
+</section>
+<!-- Screenshots -->
+<section class="section">
+<div class="container">
+<p class="eyebrow">APPLICATION SCREENSHOTS</p>
+<h2>Explore the Interface</h2>
+<p class="section-intro">Screenshots of the application landing page and student registration workflow.</p>
+<div class="research-figure-grid">
+<figure class="research-evidence-figure"><img alt="Ghana Student Portal landing page" loading="lazy" src="assets/images/student_portal_home.png"/><figcaption>Ghana Student Portal landing page.</figcaption></figure>
+<figure class="research-evidence-figure"><img alt="Student registration form demonstrating regional and district fields" loading="lazy" src="assets/images/student_portal_registration.png"/><figcaption>Student registration form demonstrating regional and district fields.</figcaption></figure>
+
+
+</div>
+</div>
+</section>
+<!-- Limitations -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">LIMITATIONS AND LESSONS</p>
+<h2>What I Learned</h2>
+<p>
+          This project strengthened my understanding
+          of backend and frontend integration,
+          database-driven applications, form validation
+          and interactive user interfaces.
+        </p>
+<p>
+          The application is a development
+          demonstration rather than a production
+          student records system. A real deployment
+          would require additional security,
+          authentication, privacy protections
+          and operational testing.
+        </p>
+</div>
+</section>
+<!-- Evidence -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">SOURCE CODE</p>
+<h2>Explore the Project</h2>
+<p>
+          The source code and project documentation
+          are available in the public GitHub repository.
+        </p>
+<div class="button-group">
+<a class="button primary" href="https://github.com/GRACE-AFFUL/Ghana-Student-Portal" rel="noopener noreferrer" target="_blank">
+            Explore the Ghana Student Portal Source Code
+          </a>
+<a class="button secondary" href="projects.html">
+            Return to All Projects
+          </a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-content">
+<p>© <span id="year"></span> Grace Afful. All rights reserved.</p>
+<p>Research · Data · Technology</p>
+</div>
+</footer>
+</body>
+</html>

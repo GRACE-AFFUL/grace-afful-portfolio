@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Learn about Grace Afful's background, research interests, technical skills, and approach to data analysis." name="description"/>
+<title>About | Grace Afful</title>
+<script>
+    (function () {
+      const saved = localStorage.getItem("portfolio-theme") || "system";
+      const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme =
+        saved === "dark" || saved === "light"
+          ? saved
+          : dark ? "dark" : "light";
+    })();
+  </script>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-content">
+<a class="logo" href="index.html">Grace<span>.</span></a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle" type="button">
+        ☰
+      </button>
+<nav aria-label="Main navigation" class="navigation" id="main-navigation">
+<a href="index.html">Home</a>
+<a aria-current="page" href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="educational-media.html">Educational Media</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="theme-control">
+<label for="theme-select">Theme</label>
+<select aria-label="Choose website theme" id="theme-select">
+<option value="system">System</option>
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="section">
+<div class="container">
+<p class="eyebrow">ABOUT ME</p>
+<h1 class="page-title">Research, data and meaningful impact</h1>
+<p class="section-intro">
+          I am a research and data analyst with training in data
+          science and a background in political science and sociology.
+          My experience includes national household data collection,
+          municipal statistics, customer-support analysis, web
+          application development and geospatial research on access
+          to primary healthcare in Ghana.
+        </p>
+<p class="section-intro">
+          I am particularly interested in using survey data, GIS
+          and statistical modelling to understand how location and
+          social conditions affect access to essential services.
+        </p>
+<p class="section-intro">
+          I also collaborate on educational content, developing
+          research-based slides, reviewing concepts and editing
+          videos that make complex subjects easier for students
+          to understand.
+        </p>
+</div>
+</section>
+<section aria-labelledby="education-heading" class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">EDUCATION</p>
+<h2 id="education-heading">MSc Data Science, University of Ghana</h2>
+<p>
+          Academic work completed. Final semester results are expected
+          in November 2026, with graduation to follow.
+        </p>
+</div>
+</section>
+<section class="section section-muted">
+<div class="container">
+<p class="eyebrow">MY EXPERTISE</p>
+<h2>Skills and Capabilities</h2>
+<div class="skills-grid">
+<article class="skill-card">
+<h3>Research</h3>
+<ul>
+<li>Survey design</li>
+<li>Fieldwork</li>
+<li>Monitoring and evaluation</li>
+<li>Literature review</li>
+</ul>
+</article>
+<article class="skill-card">
+<h3>Data</h3>
+<ul>
+<li>Python</li>
+<li>SPSS and Excel</li>
+<li>SQL and SQLite</li>
+<li>Data cleaning and visualization</li>
+</ul>
+</article>
+<article class="skill-card">
+<h3>Methods</h3>
+<ul>
+<li>Geographic Information Systems (GIS)</li>
+<li>Survey weighting</li>
+<li>Multilevel analysis</li>
+<li>Machine learning</li>
+</ul>
+</article>
+<article class="skill-card">
+<h3>Communication</h3>
+<ul>
+<li>Technical reports</li>
+<li>PowerPoint design</li>
+<li>Content review</li>
+<li>Video editing</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<p class="eyebrow">RESEARCH INTERESTS</p>
+<h2>Areas I care about</h2>
+<p class="section-intro">
+          My work connects public health, spatial inequality,
+          quantitative research and digital technologies.
+          I am interested in making data-driven findings
+          understandable and useful to researchers, organizations
+          and communities.
+        </p>
+<a class="button primary" href="projects.html">
+          Explore My Projects
+        </a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-content">
+<p>© <span id="year"></span> Grace Afful. All rights reserved.</p>
+<p>Research · Data · Technology</p>
+</div>
+</footer>
+</body>
+</html>

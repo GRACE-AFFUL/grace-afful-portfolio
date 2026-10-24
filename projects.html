@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore Grace Afful's projects in geospatial health research, machine learning, software development, and data visualization." name="description"/>
+<title>Projects | Grace Afful</title>
+<script>
+    (function () {
+      const saved = localStorage.getItem("portfolio-theme") || "system";
+      const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme =
+        saved === "dark" || saved === "light"
+          ? saved
+          : dark ? "dark" : "light";
+    })();
+  </script>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-content">
+<a class="logo" href="index.html">Grace<span>.</span></a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle" type="button">
+        ☰
+      </button>
+<nav aria-label="Main navigation" class="navigation" id="main-navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a aria-current="page" href="projects.html">Projects</a>
+<a href="educational-media.html">Educational Media</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="theme-control">
+<label for="theme-select">Theme</label>
+<select aria-label="Choose website theme" id="theme-select">
+<option value="system">System</option>
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="section projects-intro">
+<div class="container">
+<p class="eyebrow">MY WORK</p>
+<h1 class="page-title">Selected Projects</h1>
+<p class="section-intro">
+          My work brings together research, statistical analysis,
+          geospatial methods, machine learning, software development,
+          and data visualization. Explore selected projects below
+          to learn about the questions, methods, and tools behind
+          my work.
+        </p>
+</div>
+</section>
+<section class="section section-muted">
+<div class="container">
+<div class="portfolio-project-grid">
+<!-- Healthcare Access Research -->
+<article class="portfolio-project-card">
+<div aria-hidden="true" class="project-visual visual-health">
+<span>GEOSPATIAL HEALTH</span>
+</div>
+<div class="portfolio-project-body">
+<p class="project-category">Research · Public Health</p>
+<h2>Healthcare Access Research</h2>
+<p>
+                Investigating geographic and social inequalities
+                in access to primary healthcare in Ghana using
+                household survey and health-facility data.
+              </p>
+<p class="tools">GIS · R · Survey Data · Multilevel Modelling</p>
+<p class="project-note">Research findings and selected descriptive figures are presented in the project page.</p>
+<a class="project-link" href="healthcare-access.html">
+                View the Healthcare Access Research Project →
+              </a>
+</div>
+</article>
+<!-- Ghana Student Portal -->
+<article class="portfolio-project-card">
+<div aria-hidden="true" class="project-visual visual-portal">
+<span>WEB DEVELOPMENT</span>
+</div>
+<div class="portfolio-project-body">
+<p class="project-category">Software Development</p>
+<h2>Ghana Student Portal</h2>
+<p>
+                A Flask-based student information portal featuring
+                registration, Ghana-specific region and district
+                selections, searchable records, and admission-status
+                management.
+              </p>
+<p class="tools">Python · Flask · SQLite · JavaScript</p>
+<a class="project-link" href="https://github.com/GRACE-AFFUL/Ghana-Student-Portal" rel="noopener noreferrer" target="_blank">
+                Explore the Source Code →
+              </a>
+<a class="project-link" href="ghana-student-portal.html">
+                View the Ghana Student Portal Project →
+              </a>
+</div>
+</article>
+<!-- Pattern Recognition -->
+<article class="portfolio-project-card">
+<div aria-hidden="true" class="project-visual visual-ml">
+<span>MACHINE LEARNING</span>
+</div>
+<div class="portfolio-project-body">
+<p class="project-category">Data Science · Machine Learning</p>
+<h2>Unsupervised Pattern Recognition</h2>
+<p>
+                Comparing K-means, Ward hierarchical clustering,
+                and Gaussian mixture models on the UCI Wine dataset
+                using PCA and clustering evaluation metrics.
+              </p>
+<p class="tools">Python · Scikit-learn · PCA · Clustering</p>
+<a class="project-link" href="https://github.com/GRACE-AFFUL/Unsupervised-Wine-Clustering" rel="noopener noreferrer" target="_blank">
+                View the Notebook on GitHub →
+              </a>
+<a class="project-link" href="pattern-recognition.html">
+                View the Pattern Recognition Project →
+              </a>
+</div>
+</article>
+<!-- Computer Vision -->
+<article class="portfolio-project-card">
+<div aria-hidden="true" class="project-visual visual-vision">
+<span>COMPUTER VISION</span>
+</div>
+<div class="portfolio-project-body">
+<p class="project-category">Deep Learning</p>
+<h2>Computer Vision</h2>
+<p>
+                Exploring image classification and image captioning
+                using deep learning techniques.
+              </p>
+<p class="tools">Python · PyTorch · CNNs · Transformers</p>
+<a class="project-link" href="computer-vision.html">
+                View the Computer Vision Projects →
+              </a>
+</div>
+</article>
+<!-- E-Millennial Store -->
+<article class="portfolio-project-card">
+<div aria-hidden="true" class="project-visual visual-store">
+<span>E-COMMERCE</span>
+</div>
+<div class="portfolio-project-body">
+<p class="project-category">Frontend Development</p>
+<h2>E-Millennial Store</h2>
+<p>
+                A responsive gadget storefront demonstration featuring
+                a product catalogue, shopping cart, quantity controls,
+                form validation, and Paystack test-mode integration.
+              </p>
+<p class="tools">HTML · CSS · JavaScript · Paystack</p>
+<a class="project-link" href="https://github.com/GRACE-AFFUL/E-Millennial-Store" rel="noopener noreferrer" target="_blank">
+                Explore the Source Code →
+              </a>
+<a class="project-link" href="e-millennial-store.html">
+                View the E-Millennial Store Project →
+              </a>
+</div>
+</article>
+<!-- Air Quality Inequality -->
+<article class="portfolio-project-card">
+<div aria-hidden="true" class="project-visual visual-data">
+<span>DATA VISUALIZATION</span>
+</div>
+<div class="portfolio-project-body">
+<p class="project-category">Data Visualization · Environmental Health</p>
+<h2>Air Quality Inequality and Uncertainty</h2>
+<p>
+                A Python analysis of WHO PM2.5 estimates for 227 countries,
+                comparing cities and rural areas and showing uncertainty,
+                with a focus on Ghana and West Africa.
+              </p>
+<p class="tools">Python · pandas · Matplotlib · Uncertainty Visualization</p>
+<a class="project-link" href="https://github.com/GRACE-AFFUL/pm25-air-quality-inequality" rel="noopener noreferrer" target="_blank">
+                View the Notebook on GitHub →
+              </a>
+<a class="project-link" href="air-quality.html">
+                View the Air Quality Project →
+              </a>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<p class="eyebrow">MORE ON GITHUB</p>
+<h2>Explore My Technical Work</h2>
+<p class="section-intro">
+          Visit my GitHub profile to explore available source code,
+          project documentation, and technical notebooks.
+        </p>
+<a class="button primary" href="https://github.com/GRACE-AFFUL" rel="noopener noreferrer" target="_blank">
+          View My GitHub Profile
+        </a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-content">
+<p>© <span id="year"></span> Grace Afful. All rights reserved.</p>
+<p>Research · Data · Technology</p>
+</div>
+</footer>
+</body>
+</html>

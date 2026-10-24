@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Grace Afful's Python analysis of WHO PM2.5 air pollution estimates, focusing on urban-rural inequality and uncertainty in Ghana and West Africa." name="description"/>
+<title>Air Quality Inequality and Uncertainty | Grace Afful</title>
+<script>
+    (function () {
+      const saved = localStorage.getItem("portfolio-theme") || "system";
+      const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme =
+        saved === "light" || saved === "dark"
+          ? saved
+          : dark ? "dark" : "light";
+    })();
+  </script>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-content">
+<a class="logo" href="index.html">Grace<span>.</span></a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menu-toggle" type="button">
+        ☰
+      </button>
+<nav aria-label="Main navigation" class="navigation" id="main-navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a aria-current="page" href="projects.html">Projects</a>
+<a href="educational-media.html">Educational Media</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="theme-control">
+<label for="theme-select">Theme</label>
+<select aria-label="Choose website theme" id="theme-select">
+<option value="system">System</option>
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- Project introduction -->
+<section class="section research-hero">
+<div class="container">
+<a class="back-link" href="projects.html">
+          ← Back to All Projects
+        </a>
+<p class="eyebrow">DATA VISUALIZATION · ENVIRONMENTAL HEALTH</p>
+<h1 class="research-title">
+          Breathing Unequally: Air Pollution, Inequality and Uncertainty
+        </h1>
+<p class="section-intro">
+          A Python analysis of WHO's fine particulate matter (PM2.5)
+          estimates for 227 countries and territories, 2010–2023,
+          with a focus on Ghana and West Africa.
+        </p>
+<div class="research-tags">
+<span>Python</span>
+<span>pandas</span>
+<span>Matplotlib</span>
+<span>Uncertainty Visualization</span>
+<span>Environmental Health</span>
+</div>
+<a class="button primary" href="https://github.com/GRACE-AFFUL/pm25-air-quality-inequality" rel="noopener noreferrer" target="_blank">
+          View the Notebook on GitHub
+        </a>
+</div>
+</section>
+<!-- Overview -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT OVERVIEW</p>
+<h2>Who Breathes the Most Polluted Air, and How Sure Are We?</h2>
+<p>
+          PM2.5 is the air pollutant most strongly linked to stroke,
+          heart disease, lung cancer and respiratory infection.
+          This project examines how exposure differs between cities,
+          towns and rural areas, how regions changed between 2010
+          and 2023, and how much uncertainty surrounds the estimates.
+        </p>
+<p>
+          The analysis combines country-level distributions, city–rural comparisons, regional trends and WHO's reported uncertainty bounds to give a more complete picture than national averages alone.
+        </p>
+<div class="research-stats">
+<div class="research-stat">
+<strong>227</strong>
+<span>Countries and territories</span>
+</div>
+<div class="research-stat">
+<strong>14</strong>
+<span>Years of estimates (2010–2023)</span>
+</div>
+<div class="research-stat">
+<strong>8</strong>
+<span>Charts built in Python</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Research problem -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">PROBLEM AND OBJECTIVE</p>
+<h2>What Was the Project Trying to Solve?</h2>
+<p>
+          Air pollution averages can hide large differences between
+          places, and modelled estimates carry uncertainty that is
+          often left out of charts. Leaving it out makes countries
+          look more different, or more alike, than the data supports.
+        </p>
+<div class="research-highlight">
+<h3>Central Question</h3>
+<p>
+            How does PM2.5 exposure differ by residence area type and
+            region, and how should uncertainty change the way countries
+            are compared?
+          </p>
+</div>
+</div>
+</section>
+<!-- My role -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">MY CONTRIBUTION</p>
+<h2>My Role</h2>
+<p>
+          I cleaned and checked the WHO dataset, designed the analysis
+          around three research questions, built eight charts in Python
+          and interpreted the results alongside WHO's guidance on
+          responsible use of air quality data.
+        </p>
+</div>
+</section>
+<!-- Data and tools -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">DATA AND METHODS</p>
+<h2>Tools and Analytical Techniques</h2>
+<div class="research-method-grid">
+<article class="research-method-card">
+<h3>Dataset</h3>
+<ul>
+<li>WHO Global Health Observatory, SDG indicator 11.6.2</li>
+<li>Modelled annual mean PM2.5</li>
+<li>Cities, towns, rural, urban and total</li>
+<li>Lower and upper uncertainty bounds</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Visualization Methods</h3>
+<ul>
+<li>Uncertainty-interval band charts</li>
+<li>Box-and-whisker plots</li>
+<li>Interval (forest) and dumbbell plots</li>
+<li>Small multiples and stacked area charts</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Reference Values</h3>
+<ul>
+<li>WHO 2021 guideline: 5 µg/m³</li>
+<li>Interim targets: 35, 25, 15 and 10 µg/m³</li>
+</ul>
+</article>
+<article class="research-method-card">
+<h3>Technologies</h3>
+<ul>
+<li>Python and Jupyter Notebook</li>
+<li>pandas and NumPy</li>
+<li>Matplotlib</li>
+<li>Colour-blind-safe palette</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<!-- Process -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">ANALYTICAL PROCESS</p>
+<h2>How I Conducted the Analysis</h2>
+<ol class="research-process">
+<li>
+<strong>Data checks:</strong>
+            Confirmed there were no duplicates, missing values or
+            bounds inconsistent with the estimates.
+          </li>
+<li>
+<strong>Fair comparisons:</strong>
+            Compared area types only within the 181 countries that
+            report cities, towns and rural areas.
+          </li>
+<li>
+<strong>Distributions:</strong>
+            Used box-and-whisker plots to show the spread across
+            countries, not just averages.
+          </li>
+<li>
+<strong>Uncertainty:</strong>
+            Showed WHO's lower and upper bounds whenever individual
+            countries were compared.
+          </li>
+<li>
+<strong>Interpretation:</strong> Treated heavily overlapping intervals as a reason not to rank countries on central estimates alone.
+          </li>
+</ol>
+</div>
+</section>
+<!-- Results -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">PROJECT RESULTS</p>
+<h2>Key Findings</h2>
+<div class="results-table-wrapper">
+<table class="results-table">
+<caption>
+              Ghana's PM2.5 estimates, 2010 and 2023 (µg/m³)
+            </caption>
+<thead>
+<tr>
+<th scope="col">Area</th>
+<th scope="col">2010</th>
+<th scope="col">2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cities</td>
+<td>39.5</td>
+<td><strong>47.4</strong></td>
+</tr>
+<tr>
+<td>Rural</td>
+<td>27.4</td>
+<td>30.8</td>
+</tr>
+<tr>
+<td>National total</td>
+<td>35.1</td>
+<td>41.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="research-highlight">
+<h3>Key Finding</h3>
+<p>
+            In WHO's modelled central estimates, Ghana's cities have been above its rural areas in every year since 2010, and the gap grew from 12.1 to 16.6 µg/m³. Even WHO's lowest estimate for Ghana
+            in 2023 (27.2 µg/m³) is more than five times the guideline.
+          </p>
+</div>
+<ul>
+<li>In 97% of countries (176 of 181), the city estimate is higher than the rural estimate.</li>
+<li>The median country improved from 17.4 to 13.9 µg/m³, but the
+            median in WHO's African Region rose from 22.6 to 24.4.</li>
+<li>All 15 other West African countries have uncertainty intervals that overlap Nigeria's, so ranking them on central estimates alone would be unreliable.</li>
+<li>Only 5 of 227 countries and territories meet WHO's 5 µg/m³ guideline.</li>
+</ul>
+</div>
+</section>
+<!-- Figures -->
+<section class="section section-muted">
+<div class="container">
+<p class="eyebrow">DATA VISUALIZATION</p>
+<h2>Selected Charts</h2>
+<p class="section-intro">
+          Three of the project's eight charts, created in Python from the WHO dataset. Select a chart to open it at full size.
+        </p>
+<div class="research-figure-grid">
+<figure class="research-evidence-figure"><a href="assets/images/pm25_ghana_cities_rural.png" target="_blank" rel="noopener"><img alt="Line chart with uncertainty bands: Ghana's city PM2.5 estimate rises from 39.5 in 2010 to 47.4 in 2023, staying above the rural estimate, which rises from 27.4 to 30.8. Both are far above the WHO guideline of 5." loading="lazy" src="assets/images/pm25_ghana_cities_rural.png"/></a><figcaption>Uncertainty-interval chart: Ghana's city and rural PM2.5 estimates, 2010–2023, with WHO's lower and upper bounds.</figcaption></figure>
+<figure class="research-evidence-figure"><a href="assets/images/pm25_area_type_boxplot.png" target="_blank" rel="noopener"><img alt="Box-and-whisker plot of 2023 PM2.5 for 181 countries: medians are 13.3 for rural areas, 15.3 for towns and 17.9 for cities. Ghana is well above the median in all three." loading="lazy" src="assets/images/pm25_area_type_boxplot.png"/></a><figcaption>Box-and-whisker plot: PM2.5 by residence area type across 181 countries, 2023, with Ghana highlighted.</figcaption></figure>
+<figure class="research-evidence-figure"><a href="assets/images/pm25_west_africa_intervals.png" target="_blank" rel="noopener"><img alt="Interval plot of 2023 national PM2.5 estimates for 16 West African countries. Nigeria has the highest central estimate, but every other country's interval overlaps Nigeria's, so the order is uncertain." loading="lazy" src="assets/images/pm25_west_africa_intervals.png"/></a><figcaption>Interval plot: why ranking West African countries on central estimates is unreliable.</figcaption></figure>
+</div>
+</div>
+</section>
+<!-- Limitations -->
+<section class="section">
+<div class="container research-container">
+<p class="eyebrow">LIMITATIONS AND LESSONS</p>
+<h2>What the Results Tell Us</h2>
+<p>
+          WHO advises that its raw city monitoring database should not
+          be used to rank cities or compare countries directly. This
+          project uses WHO's modelled estimates instead, which are
+          designed for comparison but whose uncertainty varies widely between countries. WHO reports that data quality is poorer where ground monitoring is sparse.
+        </p>
+<p>
+          Regional summaries count each country once and are not
+          population-weighted. Annual means also hide seasonal peaks,
+          such as West Africa's Harmattan dust season.
+        </p>
+<p>
+          This project strengthened my skills in visualizing uncertainty,
+          comparing distributions and presenting data responsibly.
+        </p>
+</div>
+</section>
+<!-- Evidence -->
+<section class="section section-muted">
+<div class="container research-container">
+<p class="eyebrow">PROJECT EVIDENCE</p>
+<h2>Explore the Analysis</h2>
+<p>
+          The GitHub repository contains the Jupyter Notebook, all eight charts and the WHO dataset, shared under WHO's terms of use for non-commercial public health purposes.
+        </p>
+<div class="button-group">
+<a class="button primary" href="https://github.com/GRACE-AFFUL/pm25-air-quality-inequality" rel="noopener noreferrer" target="_blank">
+            View the Notebook on GitHub
+          </a>
+<a class="button secondary" href="projects.html">
+            Return to All Projects
+          </a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-content">
+<p>© <span id="year"></span> Grace Afful. All rights reserved.</p>
+<p>Research · Data · Technology</p>
+</div>
+</footer>
+</body>
+</html>
